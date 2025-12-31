@@ -1,9 +1,10 @@
 {
   "version": 2,
+  "framework": null,
   "builds": [
     {
       "src": "api/index.php",
-      "use": "vercel-php@0.7.3"
+      "use": "@vercel/php"
     }
   ],
   "routes": [
@@ -11,5 +12,10 @@
       "src": "/(.*)",
       "dest": "/api/index.php"
     }
-  ]
+  ],
+  "env": {
+    "APP_ENV": "production",
+    "APP_DEBUG": "false",
+    "APP_URL": "https://your-project.vercel.app"
+  }
 }
