@@ -32,7 +32,7 @@ return [
 
         'local' => [
             'driver' => 'local',
-            'root' => storage_path('app/private'),
+            'root' => sys_get_temp_dir(),
             'serve' => true,
             'throw' => false,
             'report' => false,
